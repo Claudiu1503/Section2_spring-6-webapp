@@ -44,7 +44,7 @@ public class BootstrapData implements CommandLineRunner {
         rod.setLastName("Johnson");
 
         Book noEJB = new Book();
-        noEJB.setTitle("J2EE Development without EJB");
+        noEJB.setTitle("J2EE Development");
         noEJB.setIsbn("54757585");
 
         Author rodSaved = authorRepository.save(rod);
@@ -56,7 +56,7 @@ public class BootstrapData implements CommandLineRunner {
         noEJBSaved.getAuthors().add(rodSaved);
 
         Publisher publisher = new Publisher();
-        publisher.setPublisherName("My Publisher");
+        publisher.setPublisherName("Claudiu");
         publisher.setAddress("123 Main");
         Publisher savedPublisher = publisherRepository.save(publisher);
 
